@@ -17,3 +17,6 @@ def encrypt(cleartext, offset):
             crypto_letter = alphabet[crypto_index]
             crypto_string = crypto_string + crypto_letter
     return(crypto_string)
+
+def decrypt(cleartext, offset):
+    return encrypt(cleartext, -offset).lower()
